@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Calibri';
+}
+
+nav {
+    padding: 13px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1D2236;
+    height: 18vh;
+    box-shadow: 0px 19px 16px rgba(0, 0, 0, 0.25);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 90%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: #DB5C00;
+}
+
+nav ul li a button {
+    background-color: transparent;
+    cursor: pointer;
+    border: transparent;
+    padding-top: 10px;
+}
+
+input {
+    padding: 5px;
+    width: 100%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    border-style: none;
+    border-color: transparent;
+
+}
+
+form {
+    display: flex;
+}
+
+form button {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #DB5C00;
+    transition: 0.4s;
+
+}
+
+.logo-img img {
+    width: 90%;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: #252C3F;
+}
+
+.carousel {
+    text-align: center;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 60%;
+    height: 300px;
+    box-shadow: -20px 18px 26px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 75px;
+
+}
+
+.rec-text {
+    color: white;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    padding: 13px 5%;
+}
+
+.recommended{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.game{
+    box-sizing: border-box;
+    padding: 5px;
+    width: 25%;
+    
+}
+
+.game img {
+    width: 100%;
+    height: 150px;
+    box-shadow: -18px 15px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: 10px solid #DB5C00;
+}
+.game p{
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+@media (max-width:665px) {
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #1D2236;
+        transform: translateX(100%);
+        transition: transform 0.6s ease-in;
+
+    }
+
+    nav ul.open {
+        transform: translateX(0);
+    }
+
+    .recommended{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .game{
+        width: 90%;
+        text-align: center;
+    }
+
+    .recommended img {
+        width: 80%;
+        height: 200px;
+        box-shadow: -18px 15px 13px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        border: 10px solid #DB5C00;
+    }
+}
+
+/*Footer*/
+footer{
+    background-color: #1D2236;
+    padding: 40px 0;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    
+}
+
+footer .social a{
+   border: 2px solid white;
+   display: inline-block;
+   padding: 10px;
+   align-items: center;
+   text-align: center;
+   border-radius: 50%;
+   margin: 0 8px;
+   opacity: 0.75;
+}
+
+footer .social a:hover{
+    opacity: 1;
+}
+
+.list-footer{
+    text-align: center;
+    opacity: 0.8;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex;
+    
+}
+
+.list-footer li{
+    padding: 0 5px 10px 5px;
+}
+/*Footer*/

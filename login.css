@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    color: white;
+    font-family: 'Calibri';
+    letter-spacing: 2px;
+}
+
+.design-login{
+    width: 30%;
+    background-color: #DB5C00;
+    height: 100vh;
+    box-shadow: 13px 4px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.img-login{
+    position: relative;
+    padding-top: 10rem;
+}
+
+.img-login img{
+    width: 100%;
+}
+.design-login h1{
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.login-content{
+    background-color: #1D2236;
+    
+    width: 70%;
+    padding-top: 25vh;
+    letter-spacing: 3px;
+}
+
+input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    border-style: none;
+    border-color: transparent;
+}
+
+.login-content h1{
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.login-content h3{
+    padding: 20px 0 10px 0;
+    position: static;
+}
+
+.email-password{
+    box-sizing: border-box;
+    width: 60%;
+    margin: 0 20% 0 20%;
+}
+
+h5{
+    text-align: center;
+    padding: 20px;
+}
+
+.button-content{
+    text-align: center;
+    align-items: center;
+}
+
+button{
+    padding: 10px 30px;
+    border-radius:15px ;
+    border: none;
+    border-color: none;
+    background-color: #DB5C00;
+    color: white;
+    font-family: 'Calibri';
+    font-weight: 550;
+    font-size: 20px;
+    cursor: pointer;
+    filter: drop-shadow(-10px 12px 15px rgba(0, 0, 0, 0.25));
+
+}
+
+button:hover{
+    background-color: #ff984f;
+}
+
+button:active{
+    position: relative;
+    top: 2px;
+}
+
+a{
+    color:white;
+}
+
+a:hover{
+    color:#DB5C00;
+}
+a:active{
+    color: #ff984f;
+}
+
+@media (max-width:529px){
+
+.design-login{
+    width: 0;
+}
+
+.login-content{
+    width: 100%;
+}
+}
+

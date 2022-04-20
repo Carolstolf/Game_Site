@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Site com conteúdo de games para computador">
+    <meta name="Author" content="A.C.S.R">
+    <meta name="keywords" content="games, jogos, gamer, computador, playstation, videogames, geek, online, jogosonline, gaming, nerd, brasil, fun, job">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <title>Vulcano</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <div class="logo-img"><img src="images/logo.png" alt="Vulcano logo"></div>
+        </a>
+
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Digite aqui sua pesquisa" required>
+            <button class="fas fa-search" style="color: white;"></button>
+        </form>
+
+        <div class="menu-icon" onclick="openMenu()">
+            <i class="fa fa-bars" style="font-size: 30px;color: white;"></i>
+        </div>
+        <div class="nav-itens">
+            <ul>
+                <li><a href="#"><button><img src="images/Geography.png" alt="location image" style="padding-bottom: 15px;"></button></a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="categorias.html">CATEGORIAS</a></li>
+                <li><a href="news.html">NOTÍCIAS</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="carousel">
+        <img name ="slide" class="slidecarousel">
+    </div>
+    
+    <h3 class="rec-text">RECOMENDADOS</h3>
+    <div class="recommended">
+        <div class="game">
+            <img src="images/csgo.png" alt="">
+            <p>CS: Go</p>
+        </div>
+        <div class="game">
+            <img src="images/gta5.jpg" alt="">
+            <p>GTA 5</p>
+        </div>
+        <div class="game">
+            <img src="images/naruto.png" alt="" style="background-color: white;">
+            <p>Naruto Storm 2</p>
+        </div>
+        <div class="game">
+            <img src="images/needforspeed.jpg" alt="">
+            <p>Need For Speed</p>
+        </div>
+    </div>
+    <h3 class="rec-text">NOVIDADES</h3>
+    <div class="recommended">
+        <div class="game">
+            <img src="images/fortnite.jpg" alt="">
+            <p>Fortnite</p>
+        </div>
+        <div class="game">
+            <img src="images/minecraft.webp" alt="" style="background-color: white;">
+            <p>Minecraft</p>
+        </div>
+        <div class="game">
+            <img src="images/reddead.jpg" alt="" >
+            <p>Red Dead Redemption 2</p>
+        </div>
+        <div class="game">
+            <img src="images/zelda.jpg" alt="">
+            <p>Zelda</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram" style="font-size: 30px; color: white;"></i></a>
+            <a href="#"><i class="fab fa-facebook" style="font-size: 30px; color: white;"></i></a>
+            <a href="#"><i class="fab fa-twitter" style="font-size: 30px; color: white;"></i></a>
+            <a href="#"><i class="fab fa-youtube" style="font-size: 30px; color: white;"></i></a>
+        </div>
+        <div class="list-footer">
+            <li>Home</li>
+            <li>Contato</li>
+            <li>Sobre</li>
+            <li>Termos</li>
+            <li>Política de Privacidade</li>
+        </div>
+        <p class="copyright">Vulcano @ 2022</p>
+    </footer>
+        
+    <script>
+        var menu = document.querySelector('nav ul')
+        var menuIcon = document.querySelector('.menu-icon')
+
+        function openMenu(){
+            menu.classList.toggle('open')
+        }
+    </script>
+</body>
+
+</html>
